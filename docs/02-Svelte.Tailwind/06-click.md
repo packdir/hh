@@ -69,6 +69,9 @@ document.body.addEventListener('keydown', (event) => {
 ## Ctrl + Enter 提交表单（TypeScript）
 
 ```
+ /**
+   * @param e {KeyboardEvent}
+   */
 document.body.addEventListener("keydown", (e: KeyboardEvent) => {
     if (!(e.key === "Enter" && (e.metaKey || e.ctrlKey))) return
 
