@@ -1,7 +1,33 @@
+使用流用于处理：
+
+- 大文件/数据
+- 外部分片数据
+
+除了用于大文件处理，流还带来一种强大的能力：管道。也就是说，可以通过管道的方式，将多个处理流组合起来完成更大的任务，这是一个强大的功能。
+
+以下内建模块实现的流：
+
+- HTTP responses, on the client 可读
+- HTTP requests, on the client 可写
+- HTTP requests, on the server 可读
+- HTTP responses, on the server 可写
+- fs read streams 可读
+- fs write streams 可写
+- zlib streams 可读、可写
+- crypto streams 可读、可写
+- TCP sockets 可读、可写
+- child process stdout and stderr 可读
+- child process stdin 可写
+- process.stdin 可读
+- process.stdout, process.stderr 可写
+
 
 ## Stream
 
 [Node.js官方文档：Stream](https://nodejs.org/api/stream.html#stream_stream)
+
+
+
 
 
 当处理大文件时，比如要发送一个长视频文件给客户端，通常不会将这个大文件放到相应中，因为太大了，会占用过多的内存。通常会使用流式（stream）响应的方式来处理，流式响应将数据分块（chunk）分别处理。
