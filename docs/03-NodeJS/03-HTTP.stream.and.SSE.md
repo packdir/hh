@@ -9,4 +9,12 @@ HTTP2 Server sent events has rich features than HTTP Streaming.
 这里有比较，并给出实例，已经测试有效：[What is the difference between HTTP streaming and server sent events?](https://stackoverflow.com/a/62823648/3054511)
 
 
+## 参考
+
+[Implement HTTP Streaming with Node.js and Fetch API](https://www.loginradius.com/blog/engineering/guest-post/http-streaming-with-nodejs-and-fetch-api/)
+
+[OpenAI SSE (Server-Sent Events) Streaming API](https://betterprogramming.pub/openai-sse-sever-side-events-streaming-api-733b8ec32897)
+
+
+
 
